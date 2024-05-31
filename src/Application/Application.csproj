@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\RolBasedAccessControlFeatures\Roles\Constants\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\Roles\Queries\GetById\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\Roles\Queries\GetListToPaginate\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\Roles\Rules\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\UserRoles\Constants\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\UserRoles\Queries\GetById\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\UserRoles\Queries\GetListToPaginate\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\UserRoles\Rules\" />
+    <Folder Include="Features\RolBasedAccessControlFeatures\Users\Constants\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
